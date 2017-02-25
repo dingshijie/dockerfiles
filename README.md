@@ -10,3 +10,6 @@ docker run build -t 镜像名称 .
 #以交互模式启动一个容器,在容器内执行/bin/bash命令，就可以在容器中做想做的操作了，比如安装openssh-server
 docker run -i -t --name container-name -p 8080:8080 镜像ID或名称 /bin/bash 
 ```
+
+>Tip: 
+>>server.xml和tomcat-user.xml在构建时均会被复制替换到容器的tomcat的conf中。
