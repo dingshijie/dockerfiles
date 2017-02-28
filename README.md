@@ -23,7 +23,7 @@ cd dir
 docker run build -t 镜像名称 .  
 
 #后台运行容器，并将宿主机的/test目录挂载到容器的/home/apache-tomcat-8.5.11/webapps/目录
-docker run -d --name comtainer-name -p 8080:8080 -v /test:/home/apache-tomcat-8.5.11/webapps/ 镜像ID或名称:TAG
+docker run -i -t --name comtainer-name -p 8080:8080 -v /test:/home/apache-tomcat-8.5.11/webapps/ 镜像ID或名称:TAG
 ```
 >tips: 
   1. server.xml和tomcat-user.xml在构建镜像时均会被复制到tomcat的conf文件夹中并对应覆盖原有文件。
